@@ -6,29 +6,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">   
     <link rel="stylesheet" href="../css/payroll_form.css">
     <title>Employee payroll form</title>
 </head>
 <body>
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/logo1.png" alt="BL logo">
+            <img src="../assets/logo1.png">
             <div>
-                <span class="emp-text">EMPLOYEE</span></br>
+                <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
+    </header>
 
         <!-- UC 2- EMPLOYEE PAYROLL APP WITH LOGO -->
         <div class="form-content">
-            <form class="form" action="#"onsubmit="save(); return false">
-            <div class="form-head"> Employee Payroll form</div>
+            <form class="form" action="#" onsubmit="save(event); return false">
+            <div class="form-head"> Employee Payroll form </div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" name="name" id="Name" placeholder="Your name.." required>     
             </div>
+            
+        
+
+                <!-- UC 3- Specify Profile pic to the Employee Payroll App -->
+            <div class="row-content">
+                <label class="label text" for="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile" value="../assets/profile-images/profile1.png" required>
+                        <img class="profile" id="image1" src="../assets/profile-images/profile1.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile2" name="profile" value="../assets/profile-images/profile2.png" required>
+                        <img class="profile" id="image2" src="../assets/profile-images/profile2.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile3" name="profile" value="../assets/profile-images/profile3.png" required>
+                        <img class="profile" id="image3" src="../assets/profile-images/profile3.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile4" name="profile" value="../assets/profile-images/profile4.png" required>
+                        <img class="profile" id="image4" src="../assets/profile-images/profile4.png">
+                    </label>
+
+                </div>
+
+            </div>
+
+            
+
             </form>
-        </div>
-    </header>
+    </div>
+    
 </body>
 </html>
