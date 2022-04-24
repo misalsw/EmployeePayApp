@@ -89,8 +89,10 @@
         <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
         <output class="salary-output text" for="salary">400000</output>
         </div>
+
             <!-- UC-5 Employee Payroll Form with startDate -->
-        <div class="row-content">
+        
+            <div class="row-content">
             <label class="label-text" for="startDate"></label>
             <div>
                 <select name="Day" id="day">
@@ -151,6 +153,20 @@
                 </select>
             </div>  
         </div>
+
+            <!-- UC-6 Ability to add Notes and Button -->
+
+            <div class="row-content">
+                <label class="label text" for="notes"></label>
+                <textarea name="Notes" id="notes" class="input" placeholder="" style="height: 100px;"></textarea>
+            </div>
+            <div class="buttonParent">
+                <a href="./home.html" class="resetButton button cancelButton"><Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                </div>
+            </div>
 
 
      </form>
